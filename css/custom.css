@@ -1,0 +1,141 @@
+.td-center {
+    text-align: center;
+}
+
+.navi-link {
+    transition: 1s;
+}
+
+.navi-link:hover {
+    margin-left: 30px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0F0F0F;
+    animation-name: myanimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /* background: linear-gradient(200deg, #534f4f, #000000); */
+}
+
+
+/* @keyframes myanimation {
+    0% {
+        border-radius: 0 0 0 0 / 0 0 0 0;
+      
+    }
+    50% {
+        border-radius: 0 0% 30% 30% / 100 100 100% 100%;
+        
+    }
+    100% {
+        border-radius: 0 0% 50% 50% / 0 0 100% 100%;
+        transform: scaleX(1.5);
+    }
+} */
+
+section .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+section .content h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 3em;
+}
+
+section .content p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#row1 {
+    height: 100%;
+    background: url("{{asset('img/homedesign/pexels-jéshoots-234527.jpg')}}");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#row1 div {
+    position: relative;
+    height: 40vh;
+    width: 80%;
+    /* animation-name: myanimation2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; */
+}
+
+
+/* @keyframes myanimation2 {
+    0% {
+        top: -0px;
+ 
+    }
+    50% {
+        top: -50px;
+    }
+    100% {
+        top: -100px;
+    }
+} */
+
+#titlegoeshere {
+    /* border-radius: 10% 10% 10% 10% / 100% 100% 100% 100%; */
+}
+
+#row2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #6827b0;
+}
+
+#row3 {
+    position: static;
+    width: 100%;
+    color: white;
+}
+
+.divimg {
+    width: 500px;
+    height: 300px;
+    border: 5px solid black;
+}
+
+.galleryimgs {
+    width: 300px;
+    height: 300px;
+}
+
+.imghover {
+    transition: 0.2s;
+}
+
+.imghover:hover {
+    transform: scale(1.075);
+}
